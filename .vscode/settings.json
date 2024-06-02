@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.pro": "prolog",
+        "iostream": "cpp",
+        "tuple": "cpp"
+    }
+}
