@@ -117,10 +117,10 @@ int main() {
 // open square function that uses bfs to open neighbours if there are no neighbour mines
 void openSquare(Square board[N][M], int x, int y) {
     if(x < 0 || x >= N || y < 0 || y >= M) {
-        return; // out of bounds, not necessary but just in case
+        return; // base case for bounds check
     }
     if(board[x][y].isOpened) {
-        return; // already opened, not necessary but just in case
+        return; // base case for bfs
     }
     board[x][y].isOpened = true; // open the square
     if(board[x][y].neighbourMines == 0) { // if there are no neighbour mines, use bfs to open neighbours
